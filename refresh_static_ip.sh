@@ -1,4 +1,4 @@
-#!bin/sh
+#!/bin/sh
 
 cd /etc/dhcp
 cat dhcpd.conf.bak >./dhcpd.conf
