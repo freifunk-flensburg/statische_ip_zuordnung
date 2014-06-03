@@ -21,6 +21,6 @@ if [ "$revision_old" != "$revision_new" ]
 then
 	/bin/cat /etc/dhcp/dhcpd.conf.bak >/etc/dhcp/dhcpd.conf
 	/bin/cat ./static_ips >>/etc/dhcp/dhcpd.conf
-	/usr/sbin/service isc-dhcp-server restart
+	/etc/init.d/isc-dhcp-server restart
 fi
 
