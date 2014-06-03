@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # hop into correct directory to avoid cron pwd sucks
-cd $(dirname $0)
+cd dirname $0
 
 git pull -q
 
