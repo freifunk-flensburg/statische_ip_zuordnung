@@ -7,3 +7,5 @@ you can do this by "cp /etc/dhcp/dhcpd.conf /etc/dhcp/dhcpd.conf.bak
 When you´ve created the backup file than you can add a crontab for the root user like this:
 
 */5 * * * * $(Path_to_refresh_static_ip.sh)
+
+the script has to be executable!!!
