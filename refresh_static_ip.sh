@@ -20,9 +20,8 @@ revision_new=$(getCurrentVersion)
 # if sha-1 changed, make fastd reload the keys
 if [ "$revision_old" != "$revision_new" ]
 then
-	cd /etc/dhcp
-	cat dhcpd.conf.bak >./dhcpd.conf
-	cat $(PATH_TO_static_ip_file) >>./dhcpd.conf
+	cat /etc/dhcp/dhcpd.conf.bak >/etc/dhcp//dhcpd.conf
+	cat ./static_ips >>/etc/dhcp/dhcpd.conf
 	service isc-dhcp-server restart
 fi
 
