@@ -1,4 +1,4 @@
-host spralexx1 {
+host spralexx01 {
         hardware ethernet 70:f1:a1:a5:31:51;
         fixed-address 10.129.2.1;
         option host-name "spralexx_laptop";
