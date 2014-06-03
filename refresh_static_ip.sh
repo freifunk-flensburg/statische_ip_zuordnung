@@ -17,7 +17,6 @@ git pull -q
 revision_new=$(getCurrentVersion)
 
 
-# if sha-1 changed, make fastd reload the keys
 if [ "$revision_old" != "$revision_new" ]
 then
 	cat /etc/dhcp/dhcpd.conf.bak >/etc/dhcp/dhcpd.conf
