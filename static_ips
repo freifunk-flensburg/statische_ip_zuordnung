@@ -10,3 +10,15 @@ host spralexx01 {
         fixed-address 10.129.2.1;
         option host-name "spralexx_laptop";
 }
+
+host zebedaeus01 {
+        hardware ethernet 00:21:6a:41:76:62;
+        fixed-address 10.129.2.11;
+        option host-name "zebedaeus";
+}
+
+host zebedaeus02 {
+        hardware ethernet 00:22:68:0b:e3:dd;
+        fixed-address 10.129.2.12;
+        option host-name "zebedaeus";
+}
