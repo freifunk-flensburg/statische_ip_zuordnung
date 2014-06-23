@@ -22,3 +22,9 @@ host zebedaeus02 {
         fixed-address 10.129.2.12;
         option host-name "zebedaeus";
 }
+
+host porno-srv-01 {
+        hardware ethernet 00:21:a2:2c:3b:bf;
+        fixed-address 10.129.2.20;
+        option host-name "porno-srv-01";
+}
