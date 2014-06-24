@@ -1,3 +1,4 @@
 You can only run this script for isc-dhcp-server!!
 
-just run setup.sh as root!
+1. run "chmod +x setup.sh"
+2. just run setup.sh as root!
