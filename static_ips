@@ -4,6 +4,10 @@
 #        fixed-address 10.129.2.1;
 #        option host-name "spralexx_laptop";
 #}
+#
+# Reservierte Blöcke:
+# Rene (Spralexx) 10.129.2.1-9
+# Fabian(Wlanfr3ak) 10.129.2.10-19
 
 host spralexx01 {
         hardware ethernet 70:f1:a1:a5:31:51;
@@ -11,6 +15,7 @@ host spralexx01 {
         option host-name "spralexx_laptop";
 }
 
+#Begin Block Fabian
 host zebedaeus01 {
         hardware ethernet 00:21:6a:41:76:62;
         fixed-address 10.129.2.11;
@@ -23,8 +28,15 @@ host zebedaeus02 {
         option host-name "zebedaeus";
 }
 
-host porno-srv-01 {
-        hardware ethernet 00:21:a2:2c:3b:bf;
-        fixed-address 10.129.2.20;
-        option host-name "porno-srv-01";
+host pi.9c3.deE {
+        hardware ethernet b8:27:eb:1f:16:97;
+        fixed-address 10.129.2.18;
+        option host-name "pi.9c3.de"
 }
+
+host pi.9c3.deW {
+        hardware ethernet 7c:dd:90:38:3a:83;
+        fixed-address 10.129.2.19;
+        option host-name "pi.9c3.de"
+}
+#Ende Block Fabien
