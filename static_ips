@@ -8,6 +8,7 @@
 # Reservierte Blöcke:
 # Rene (Spralexx) 10.129.2.1-9
 # Fabian(Wlanfr3ak) 10.129.2.10-19
+# Flemming 10.129.2.20-25
 
 host spralexx01 {
         hardware ethernet 70:f1:a1:a5:31:51;
@@ -40,3 +41,13 @@ host pi.9c3.deW {
         option host-name "pi.9c3.de"
 }
 #Ende Block Fabien
+
+#Beginn Block Flemming
+
+host blackbox {
+        hardware ethernet b8:27:eb:15:90:b3;
+        fixed-address 10.129.2.20;
+        option host-name "blackbox"
+}
+
+#ende Block Flemming
