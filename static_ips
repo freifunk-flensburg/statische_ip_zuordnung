@@ -51,3 +51,12 @@ host blackbox {
 }
 
 #ende Block Flemming
+#begin Block homwer.com
+
+host raspberrypi {
+        hardware ethernet b8:27:eb:31:5f:55;
+        fixed-address 10.129.2.100;
+        option host-name "raspberrypi"
+}
+
+#ende Block homwer.com
