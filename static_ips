@@ -9,6 +9,7 @@
 # Rene (Spralexx) 10.129.2.1-9
 # Fabian(Wlanfr3ak) 10.129.2.10-19
 # Flemming 10.129.2.20-25
+#mtrnord 10.129.2.26-29
 
 host spralexx01 {
         hardware ethernet 70:f1:a1:a5:31:51;
@@ -60,3 +61,11 @@ host raspberrypi {
 }
 
 #ende Block homwer.com
+#beginn Block mtrnord
+
+host RPIMarcel1{
+        hardware ethernet 64:70:02:2f:10:69
+        fixed-address 10.129.2.26
+        option host-name "RPIMarcel1"
+}
+#ende Block mtrnord
