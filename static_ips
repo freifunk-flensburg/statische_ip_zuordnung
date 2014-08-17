@@ -68,4 +68,9 @@ host RPIMarcel1{
         fixed-address 10.129.2.26
         option host-name "RPIMarcel1"
 }
+host RPIFrank2{
+        hardware ethernet 80:1f:02:b3:4e:bf
+        fixed-address 10.129.2.27
+        option host-name "RPIFrank2"
+}
 #ende Block mtrnord
