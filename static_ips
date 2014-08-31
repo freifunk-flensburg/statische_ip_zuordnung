@@ -11,6 +11,7 @@
 # Flemming 10.129.2.20-25
 # mtrnord 10.129.2.26-29
 # Kevin 10.129.2.30-32
+# sven 10.129.2.32-35
 
 host spralexx01 {
         hardware ethernet 70:f1:a1:a5:31:51;
@@ -78,3 +79,5 @@ host RPIFrank2{
 #beginn block kevin
  address 10.129.2.31
 #endblock kevin
+#beginn block sven
+#ende block sven
