@@ -1,0 +1,19 @@
+ddns-update-style none;
+option domain-name ".fffl";
+
+default-lease-time 600;
+max-lease-time 1200;
+
+log-facility local7;
+
+option rfc3442-classless-static-routes code 121 = array of integer 8;
+option ms-classless-static-routes code 240 = array of integer 8;
+
+subnet 10.129.0.0 netmask 255.255.0.0 {
+    authoritative;
+    range 10.129.5.1 10.129.9.254;
+    option routers 10.129.1.1;
+    option domain-name-servers 10.129.1.1, 85.214.73.63, 87.118.100.175, 62.141.58.13, 87.118.104.203, 85.25.251.254, 94.75.228.29;
+    option rfc3442-classless-static-routes 24, 10, 129, 240, 10, 129, 1, 1, 0, 10, 129, 1, 1;
+    option ms-classless-static-routes 24, 10, 129, 240, 10, 129, 1, 1, 0, 10, 129, 1, 1;
+}
