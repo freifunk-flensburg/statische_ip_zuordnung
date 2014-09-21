@@ -43,7 +43,7 @@ host pi.9c3.deW {
         fixed-address 10.129.2.19;
         option host-name "pi.9c3.de"
 }
-#Ende Block Fabien
+#Ende Block Fabian
 
 #Beginn Block Flemming
 
