@@ -1,4 +1,5 @@
 #!/bin/sh
+# This is a Test
 
 # hop into correct directory to avoid cron pwd sucks
 cd $(dirname $0)
