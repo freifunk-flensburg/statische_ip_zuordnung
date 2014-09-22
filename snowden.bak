@@ -1,4 +1,11 @@
+root@snowden ~/statische_ip_zuordnung # cat /etc/dhcp/dhcpd.conf
+# The ddns-updates-style parameter controls whether or not the server will
+# attempt to do a DNS update when a lease is confirmed. We default to the
+# behavior of the version 2 packages ('none', since DHCP v2 didn't
+# have support for DDNS.)
 ddns-update-style none;
+
+# option definitions common to all supported networks...
 option domain-name ".fffl";
 
 default-lease-time 600;
@@ -17,3 +24,92 @@ subnet 10.129.0.0 netmask 255.255.0.0 {
     option rfc3442-classless-static-routes 24, 10, 129, 240, 10, 129, 1, 1, 0, 10, 129, 1, 1;
     option ms-classless-static-routes 24, 10, 129, 240, 10, 129, 1, 1, 0, 10, 129, 1, 1;
 }
+
+# example:
+#host spralexx01 {
+#        hardware ethernet 70:f1:a1:a5:31:51;
+#        fixed-address 10.129.2.1;
+#        option host-name "spralexx_laptop";
+#}
+#
+# Reservierte Blöcke:
+# Rene (Spralexx) 10.129.2.1-9
+# Fabian(Wlanfr3ak) 10.129.2.10-19
+# Flemming 10.129.2.20-25
+# mtrnord 10.129.2.26-29
+# Kevin 10.129.2.30-32
+# sven 10.129.2.32-35
+
+host spralexx01 {
+        hardware ethernet 70:f1:a1:a5:31:51;
+        fixed-address 10.129.2.1;
+        option host-name "spralexx_laptop";
+}
+
+#Begin Block Fabian
+
+host zebedaeus01 {
+        hardware ethernet 00:21:6a:41:76:62;
+        fixed-address 10.129.2.11;
+        option host-name "zebedaeus";
+}
+
+host zebedaeus02 {
+        hardware ethernet 00:22:68:0b:e3:dd;
+        fixed-address 10.129.2.12;
+        option host-name "zebedaeus";
+}
+
+host pi.9c3.deE {
+        hardware ethernet b8:27:eb:1f:16:97;
+        fixed-address 10.129.2.18;
+        option host-name "pi.9c3.de";
+}
+
+host pi.9c3.deW {
+        hardware ethernet 7c:dd:90:38:3a:83;
+        fixed-address 10.129.2.19;
+        option host-name "pi.9c3.de";
+}
+
+#Ende Block Fabian
+
+#Beginn Block Flemming
+
+host blackbox {
+        hardware ethernet b8:27:eb:15:90:b3;
+        fixed-address 10.129.2.20;
+        option host-name "blackbox";
+}
+
+#ende Block Flemming
+#begin Block homwer.com
+
+host raspberrypi {
+        hardware ethernet b8:27:eb:31:5f:55;
+        fixed-address 10.129.2.100;
+        option host-name "raspberrypi";
+}
+
+#ende Block homwer.com
+#beginn Block mtrnord
+
+host rpimarcel1 {
+        hardware ethernet 64:70:02:2f:10:69;
+        fixed-address 10.129.2.26;
+        option host-name "RPIMarcel1";
+}
+
+host rpifrank2 {
+        hardware ethernet 80:1f:02:b3:4e:bf;
+        fixed-address 10.129.2.27;
+        option host-name "RPIFrank2";
+}
+
+#ende Block mtrnord
+#beginn block kevin
+#host kevin{
+# address 10.129.2.31
+#endblock kevin
+#beginn block sven
+#ende block sven
