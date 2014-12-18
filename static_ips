@@ -83,3 +83,11 @@ host RPIFrank2{
 #endblock kevin
 #beginn block sven
 #ende block sven
+
+#begin block wick
+host wick{
+        hardware ethernet ee:00:dc:ee:00:ee
+        fixed-address 10.129.2.36
+        option host-name "wick"
+}
+#end block wick
