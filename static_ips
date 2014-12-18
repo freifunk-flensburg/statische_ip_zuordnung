@@ -13,6 +13,7 @@
 # Kevin 10.129.2.30-32
 # sven 10.129.2.32-35
 # wick 10.129.2.36
+# Hendrik 10.129.2.37-40
 
 host spralexx01 {
         hardware ethernet 70:f1:a1:a5:31:51;
