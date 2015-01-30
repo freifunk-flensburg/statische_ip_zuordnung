@@ -14,6 +14,7 @@
 # sven 10.129.2.32-35
 # wick 10.129.2.36
 # Hendrik 10.129.2.37-40
+# roikiermedia 10.129.2.41-44
 
 host spralexx01 {
         hardware ethernet 70:f1:a1:a5:31:51;
@@ -91,3 +92,19 @@ host wick{
         option host-name "wick"
 }
 #end block wick
+
+#beginn block roikiermedia
+
+host render.roikier.media {
+        hardware ethernet de:ad:b1:05:c0:de;
+        fixed-address 10.129.2.41;
+        option host-name "render.roikier.media"
+}
+
+host mbp.roikier.media {
+        hardware ethernet 6c:40:08:8a:b2:7a;
+        fixed-address 10.129.2.42;
+        option host-name "mbp.roikier.media"
+}
+
+#ende block roikiermedia
