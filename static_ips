@@ -69,25 +69,25 @@ host raspberrypi {
 #beginn Block mtrnord
 
 host RPIMarcel1{
-        hardware ethernet 64:70:02:2f:10:69
+        hardware ethernet 64:70:02:2f:10:69;
         fixed-address 10.129.2.26
         option host-name "RPIMarcel1"
 }
 host RPIFrank2{
-        hardware ethernet 80:1f:02:b3:4e:bf
+        hardware ethernet 80:1f:02:b3:4e:bf;
         fixed-address 10.129.2.27
         option host-name "RPIFrank2"
 }
 #ende Block mtrnord
 #beginn block kevin
- address 10.129.2.31
+#address 10.129.2.31
 #endblock kevin
 #beginn block sven
 #ende block sven
 
 #begin block wick
 host wick{
-        hardware ethernet ee:00:dc:ee:00:ee
+        hardware ethernet ee:00:dc:ee:00:ee;
         fixed-address 10.129.2.36
         option host-name "wick"
 }
