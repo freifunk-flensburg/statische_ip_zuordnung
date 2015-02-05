@@ -15,6 +15,7 @@
 # wick 10.129.2.36
 # Hendrik 10.129.2.37-40
 # roikiermedia 10.129.2.41-44
+# homwer.com 10.129.2.100-120
 
 host spralexx01 {
         hardware ethernet 70:f1:a1:a5:31:51;
