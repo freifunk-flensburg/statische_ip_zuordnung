@@ -110,3 +110,11 @@ host mbp.roikier.media {
 }
 
 #ende block roikiermedia
+
+#begin block olli
+host redpi {
+        hardware ethernet 80:1f:02:d3:4e:a6;
+        fixed-address 10.129.2.254;
+        option host-name "redpi"
+}
+#end block olli
