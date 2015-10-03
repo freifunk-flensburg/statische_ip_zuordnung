@@ -69,12 +69,7 @@ host raspberrypi {
 
 #ende Block homwer.com
 #beginn Block mtrnord
-
-host RPIMarcel1{
-        hardware ethernet 64:70:02:2f:10:69;
-        fixed-address 10.129.2.26
-        option host-name "RPIMarcel1"
-}
+#address 10.129.2.26
 host RPIFrank2{
         hardware ethernet 80:1f:02:b3:4e:bf;
         fixed-address 10.129.2.27
