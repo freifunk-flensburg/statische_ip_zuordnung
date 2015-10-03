@@ -80,6 +80,16 @@ host RPIFrank2{
         fixed-address 10.129.2.27
         option host-name "RPIFrank2"
 }
+host CPE510EKEBERGKRUG{
+        hardware ethernet c4:e9:84:99:a3:22;
+        fixed-address 10.129.2.28
+        option host-name "CPE510EKEBERGKRUG"
+}
+host CPE510Hollmuehle{
+        hardware ethernet c4:e9:84:b0:b2:52;
+        fixed-address 10.129.2.29
+        option host-name "CPE510Hollmuehle"
+}
 #ende Block mtrnord
 #beginn block kevin
 #address 10.129.2.31
