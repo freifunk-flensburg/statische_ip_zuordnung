@@ -15,8 +15,9 @@
 # wick 10.129.2.36
 # CCRRX 10.129.2.37-40
 # roikiermedia 10.129.2.41-44
+# nordlab e.V. 10.129.2.51-60
 # homwer.com 10.129.2.100-120
-#scire 10.129.2.121-123
+# scire 10.129.2.121-123
 
 host spralexx01 {
         hardware ethernet 70:f1:a1:a5:31:51;
@@ -131,3 +132,13 @@ host mbp.roikier.media {
 }
 
 #ende block roikiermedia
+
+# Begin block nordlab e.V.
+
+host cubietruck.nordlab {
+        hardware ethernet 4a:9d:1c:42:9f:e7;
+        fixed-address 10.129.2.51;
+        option host-name "cubietruck.nordlab";
+}
+
+# End block nordlab e.V.
