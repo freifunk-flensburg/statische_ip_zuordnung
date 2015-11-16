@@ -15,6 +15,7 @@
 # wick 10.129.2.36
 # CCRRX 10.129.2.37-40
 # roikiermedia 10.129.2.41-44
+# Tjerk (Wlanfr3ak) 10.129.2.45-46
 # nordlab e.V. 10.129.2.51-60
 # homwer.com 10.129.2.100-120
 # scire 10.129.2.121-123
@@ -97,6 +98,7 @@ host CPE510Hollmuehle{
 #address 10.129.2.31
 #endblock kevin
 #beginn block sven
+# 34 und 35 sind die Drucker im Hackerspace
 #ende block sven
 
 #begin block wick
@@ -138,7 +140,13 @@ host mbp.roikier.media {
 }
 
 #ende block roikiermedia
-
+#Anfang Tjerk (Wlanfr3ak)
+host pi.tjerk {
+        hardware ethernet B8:27:EB:E5:9F:9E;
+        fixed-address 10.129.2.45;
+        option host-name "pi.tjerk"
+}
+# Ende Block Tjerk
 # Begin block nordlab e.V.
 
 host cubietruck.nordlab {
