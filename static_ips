@@ -27,6 +27,12 @@ host spralexx01 {
 }
 
 #Begin Block Fabian
+host pve01.fffl {
+        hardware ethernet 00:21:6a:41:76:62;
+        fixed-address 10.129.2.10;
+        option host-name "pve01";
+}
+
 host zebedaeus01 {
         hardware ethernet 00:21:6a:41:76:62;
         fixed-address 10.129.2.11;
