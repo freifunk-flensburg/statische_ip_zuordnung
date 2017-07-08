@@ -16,7 +16,7 @@
 # CCRRX 10.129.2.37-40
 # roikiermedia 10.129.2.41-44
 # Tjerk (Wlanfr3ak) 10.129.2.45-46
-# nordlab e.V. 10.129.2.51-60
+# nordlab e.V. 10.129.2.51-60 and 10.129.2.222
 # homwer.com 10.129.2.100-120
 # scire 10.129.2.121-123
 
@@ -141,6 +141,12 @@ host cubietruck.nordlab {
         hardware ethernet 4a:9d:1c:42:9f:e7;
         fixed-address 10.129.2.51;
         option host-name "cubietruck.nordlab";
+}
+
+host backupirc.nordlab {
+        hardware ethernet b8:27:eb:22:ef:c9;
+        fixed-address 10.129.2.222;
+        option host-name "backupirc.nordlab";
 }
 
 # End block nordlab e.V.
