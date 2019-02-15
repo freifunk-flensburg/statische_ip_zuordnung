@@ -19,6 +19,7 @@
 # nordlab e.V. 10.129.2.51-60
 # Virtualisierungsserver 10.129.2.100-120
 # scire 10.129.2.121-123
+# nils 10.129.2.200-220
 
 #Begin Block Fabian
 host zebedaeus01 {
